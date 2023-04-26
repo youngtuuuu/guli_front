@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-bind:value="searchMap.keyWord"/>
+        <input type="text" v-model:value="searchMap.keyWord"/>
+        <button v-on:click="search()">查询</button>
+        <p>{{searchMap.keyWord}}</p>
+    </div>
+   <script src="vue.min.js"></script>
+   <script src="vue-router.min.js"></script>
+   <script>
+       new Vue({
+           el: '#app',
+           data: {
+               searchMap:{
+                 keyWord:"gdut"
+               }
+           },
+           methods:{
+                search(){
+                    console.log('search...')
+                }
+           }
+       })
+   </script>
+</body>
+
+</html>
