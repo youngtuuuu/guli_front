@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    讲师管理
+    <center>讲师管理</center><br>
      <el-form label-width="120px">
       <el-form-item label="讲师名称">
         <el-input v-model="teacher.name"/>

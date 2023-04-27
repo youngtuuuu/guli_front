@@ -1,7 +1,6 @@
 <template>
   <div class="app-container">
-    讲师列表
-
+    <center>讲师列表</center><br>
     <!--查询表单-->
     <el-form :inline="true" class="demo-form-inline">
       <el-form-item>
